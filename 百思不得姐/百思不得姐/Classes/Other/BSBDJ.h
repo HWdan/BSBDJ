@@ -21,8 +21,12 @@
 #define HWTScreenW [UIScreen mainScreen].bounds.size.width
 #define HWTScreenH [UIScreen mainScreen].bounds.size.height
 
+#define HWTColor(r,g,b) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:1]
+
 #import "UIBarButtonItem+HWTItem.h"
 #import "UIImage+Image.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import <UIImageView+WebCache.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "UIView+HWTFrame.h"

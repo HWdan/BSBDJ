@@ -7,6 +7,7 @@
 //
 
 #import "HWTFriendTrendsViewController.h"
+#import "HWTLoginRegisterController.h"
 
 @interface HWTFriendTrendsViewController ()
 
@@ -16,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255) / 255.0 green:arc4random_uniform(255) / 255.0 blue:arc4random_uniform(255) / 255.0 alpha:1];
     [self setFriendTrendsNavigationItem];
 }
 
@@ -28,6 +28,10 @@
 
 - (void)friendTrends_leftBarButtonClick {
     HWTFunc;
+}
+- (IBAction)loginRegisterClick:(id)sender {
+    HWTLoginRegisterController *loginRegisterVC = [[HWTLoginRegisterController alloc] init];
+    [self presentViewController:loginRegisterVC animated:YES completion:nil];
 }
 
 @end

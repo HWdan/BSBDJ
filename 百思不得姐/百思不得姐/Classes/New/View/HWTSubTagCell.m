@@ -17,12 +17,31 @@
 @end
 
 @implementation HWTSubTagCell
+//重写 cell 的frame （高度减1就出现分割线）
+- (void)setFrame:(CGRect)frame {
+    frame.size.height -= 1;
+    [super setFrame:frame];
+}
 
 - (void)setSubTag:(HWTSubTagModel *)subTag {
     _subTag = subTag;
     _nameLabel.text = subTag.theme_name;
     [self resolveNumber];
-    [_iconImageView sd_setImageWithURL:[NSURL URLWithString:subTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [_iconImageView sd_setImageWithURL:[NSURL URLWithString:subTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] options:SDWebImageCacheMemoryOnly completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        //获取图形上下文
+        UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+        //获取裁剪区域
+        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+        //设置裁剪区域
+        [path addClip];
+        //画图片
+        [image drawAtPoint:CGPointZero];
+        //获取裁剪后的图片
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        //关闭上下文
+        UIGraphicsEndPDFContext();
+        _iconImageView.image = image;
+    }];
 }
 
 //处理订阅数据
@@ -39,10 +58,10 @@
 //从 xib 中加载就会调用这个方法一次
 - (void)awakeFromNib {
     [super awakeFromNib];
-    //设置 iconImageView 圆角
-    _iconImageView.layer.cornerRadius = 30;
-    _iconImageView.layer.masksToBounds = YES;
-    //处理 cell 分割线（让分割线从0开始）
+//    //设置 iconImageView 圆角 (iOS 9之前可能会出现卡顿，不建议使用)
+//    _iconImageView.layer.cornerRadius = 30;
+//    _iconImageView.layer.masksToBounds = YES;
+    //处理 cell 分割线（让分割线从0开始，iOS 8之后）
     self.layoutMargins = UIEdgeInsetsZero;
 }
 

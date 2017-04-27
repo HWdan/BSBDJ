@@ -15,6 +15,7 @@ static NSString * const subTagcellID = @"subTagcellID";
 @interface HWTSubTagViewController ()
 
 @property (nonatomic, strong) NSArray *subTags;
+@property (nonatomic, weak) AFHTTPSessionManager *manager;
 
 @end
 
@@ -26,23 +27,38 @@ static NSString * const subTagcellID = @"subTagcellID";
     //注册 cell
     [self.tableView registerNib:[UINib nibWithNibName:@"HWTSubTagCell" bundle:nil] forCellReuseIdentifier:subTagcellID];
     self.title = @"推荐标签";
-    //处理分割线：1.清空 tableView 的分割线内边距（iOS 7之后）2.清空 cell 的分割线内边距（iOS 8之后）
-    self.tableView.separatorInset = UIEdgeInsetsZero;
+    //处理分割线：清空 tableView 的分割线内边距（iOS 7之后,不建议使用）
+//    self.tableView.separatorInset = UIEdgeInsetsZero;
+    //重写 cell 的frame
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = HWTColor(220, 220, 221);
+    //提示用户正在加载数据
+    [SVProgressHUD showWithStatus:@"正在拼命加载..."];
+}
+
+//页面即将消失
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+    [_manager.tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 
 #pragma mark - 请求网络数据
 - (void)loadData {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    _manager = manager;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
     [manager GET:SubTagServiceHttp parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         HWTLog(@"HWTSubTagViewController_responseObject = %@",responseObject);
         _subTags = [HWTSubTagModel mj_objectArrayWithKeyValuesArray:responseObject];
         //刷新表格
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         HWTLog(@"HWTSubTagViewController_error = %@",error);
     }];
 }
