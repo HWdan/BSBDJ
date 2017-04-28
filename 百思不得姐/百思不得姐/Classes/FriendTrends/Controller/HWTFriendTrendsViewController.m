@@ -20,12 +20,14 @@
     [self setFriendTrendsNavigationItem];
 }
 
+#pragma mark - 设置 Navigation
 - (void)setFriendTrendsNavigationItem {
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"friendsRecommentIcon" heihImageName:@"friendsRecommentIcon-click" target:self action:@selector(friendTrends_leftBarButtonClick)];
     
     self.navigationItem.title = @"我的关注";
 }
 
+#pragma mark - 事件
 - (void)friendTrends_leftBarButtonClick {
     HWTFunc;
 }

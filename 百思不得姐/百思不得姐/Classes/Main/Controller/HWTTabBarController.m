@@ -50,7 +50,13 @@
 }
 
 - (void)setupChildViewControllerWithViewController:(NSString *)viewController {
-    UIViewController *VC = [[NSClassFromString(viewController) alloc] init];
+    UIViewController *VC;
+    if ([viewController isEqualToString:@"HWTMeViewController"]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:viewController bundle:nil];
+        VC = [storyboard instantiateInitialViewController];
+    } else {
+        VC = [[NSClassFromString(viewController) alloc] init];
+    }
     HWTNavigationController *nav = [[HWTNavigationController alloc] initWithRootViewController:VC];
     [self addChildViewController:nav];
 }

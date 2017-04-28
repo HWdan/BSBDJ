@@ -10,7 +10,7 @@
 #import "HWTSubTagModel.h"
 #import "HWTSubTagCell.h"
 
-#define SubTagServiceHttp @"http://api.budejie.com/api/api_open.php"
+#define SubTag_ServiceHttp @"http://api.budejie.com/api/api_open.php"
 static NSString * const subTagcellID = @"subTagcellID";
 @interface HWTSubTagViewController ()
 
@@ -51,7 +51,7 @@ static NSString * const subTagcellID = @"subTagcellID";
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
-    [manager GET:SubTagServiceHttp parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [manager GET:SubTag_ServiceHttp parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         [SVProgressHUD dismiss];
         HWTLog(@"HWTSubTagViewController_responseObject = %@",responseObject);
         _subTags = [HWTSubTagModel mj_objectArrayWithKeyValuesArray:responseObject];

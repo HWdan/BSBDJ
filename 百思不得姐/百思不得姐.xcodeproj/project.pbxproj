@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062C72691EB2E74B0088343E /* HWTLoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C72681EB2E74B0088343E /* HWTLoginField.m */; };
+		062C726B1EB314BF0088343E /* HWTMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */; };
+		062C726F1EB31CCD0088343E /* HWTSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C726D1EB31CCD0088343E /* HWTSquareCell.m */; };
+		062C72701EB31CCD0088343E /* HWTSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062C726E1EB31CCD0088343E /* HWTSquareCell.xib */; };
+		062C72731EB332B80088343E /* HWTSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C72721EB332B80088343E /* HWTSquareModel.m */; };
 		062FE3881EB0903B00954D69 /* HWTFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062FE3871EB0903B00954D69 /* HWTFriendTrendsViewController.xib */; };
 		062FE3911EB0A1C800954D69 /* HWTLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062FE38F1EB0A1C800954D69 /* HWTLoginRegisterController.m */; };
 		062FE3921EB0A1C800954D69 /* HWTLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062FE3901EB0A1C800954D69 /* HWTLoginRegisterController.xib */; };
@@ -50,6 +55,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		062C72671EB2E74B0088343E /* HWTLoginField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTLoginField.h; sourceTree = "<group>"; };
+		062C72681EB2E74B0088343E /* HWTLoginField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTLoginField.m; sourceTree = "<group>"; };
+		062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HWTMeViewController.storyboard; sourceTree = "<group>"; };
+		062C726C1EB31CCD0088343E /* HWTSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTSquareCell.h; sourceTree = "<group>"; };
+		062C726D1EB31CCD0088343E /* HWTSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTSquareCell.m; sourceTree = "<group>"; };
+		062C726E1EB31CCD0088343E /* HWTSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWTSquareCell.xib; sourceTree = "<group>"; };
+		062C72711EB332B80088343E /* HWTSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTSquareModel.h; sourceTree = "<group>"; };
+		062C72721EB332B80088343E /* HWTSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTSquareModel.m; sourceTree = "<group>"; };
 		062FE3871EB0903B00954D69 /* HWTFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWTFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		062FE38E1EB0A1C800954D69 /* HWTLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTLoginRegisterController.h; sourceTree = "<group>"; };
 		062FE38F1EB0A1C800954D69 /* HWTLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTLoginRegisterController.m; sourceTree = "<group>"; };
@@ -320,6 +333,8 @@
 				0646E1FA1EB1DF6400D5BACD /* HWTFastLoginView.xib */,
 				0646E1FC1EB1E59D00D5BACD /* HWTFastButton.h */,
 				0646E1FD1EB1E59D00D5BACD /* HWTFastButton.m */,
+				062C72671EB2E74B0088343E /* HWTLoginField.h */,
+				062C72681EB2E74B0088343E /* HWTLoginField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +355,7 @@
 			children = (
 				066A012A1EA7517300597A8B /* HWTMeViewController.h */,
 				066A012B1EA7517300597A8B /* HWTMeViewController.m */,
+				062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,6 +363,8 @@
 		066A01141EA750EA00597A8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				062C72711EB332B80088343E /* HWTSquareModel.h */,
+				062C72721EB332B80088343E /* HWTSquareModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,6 +372,9 @@
 		066A01151EA750EA00597A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				062C726C1EB31CCD0088343E /* HWTSquareCell.h */,
+				062C726D1EB31CCD0088343E /* HWTSquareCell.m */,
+				062C726E1EB31CCD0088343E /* HWTSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -607,11 +628,13 @@
 				0642A5921EAEF3C1003D652C /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				066A00F61EA6FDEB00597A8B /* Assets.xcassets in Resources */,
 				0642A5941EAEF3C1003D652C /* LaunchImage@2x.png in Resources */,
+				062C72701EB31CCD0088343E /* HWTSquareCell.xib in Resources */,
 				0642A58F1EAEF3C1003D652C /* LaunchImage-700-568h@2x.png in Resources */,
 				0642A5911EAEF3C1003D652C /* LaunchImage-800-667h@2x.png in Resources */,
 				0642A58E1EAEF3C1003D652C /* LaunchImage-568h@2x.png in Resources */,
 				062FE3881EB0903B00954D69 /* HWTFriendTrendsViewController.xib in Resources */,
 				0642A5931EAEF3C1003D652C /* LaunchImage.png in Resources */,
+				062C726B1EB314BF0088343E /* HWTMeViewController.storyboard in Resources */,
 				066A00F41EA6FDEB00597A8B /* Main.storyboard in Resources */,
 				0646E1FB1EB1DF6400D5BACD /* HWTFastLoginView.xib in Resources */,
 				0646E1F31EB1916C00D5BACD /* HWTLoginRegisterView.xib in Resources */,
@@ -677,6 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062C72731EB332B80088343E /* HWTSquareModel.m in Sources */,
 				066A01291EA7514F00597A8B /* HWTFriendTrendsViewController.m in Sources */,
 				0695359C1EA9A59500502142 /* HWTTabBar.m in Sources */,
 				066A012F1EA7519900597A8B /* HWTNewViewController.m in Sources */,
@@ -687,6 +711,7 @@
 				0642A5971EAF208A003D652C /* HWTAdModel.m in Sources */,
 				066A01261EA7513800597A8B /* HWTEssenceViewController.m in Sources */,
 				066A01221EA750EA00597A8B /* AppDelegate.m in Sources */,
+				062C72691EB2E74B0088343E /* HWTLoginField.m in Sources */,
 				0646E1F91EB1DF5700D5BACD /* HWTFastLoginView.m in Sources */,
 				0646E1FE1EB1E59D00D5BACD /* HWTFastButton.m in Sources */,
 				066A012C1EA7517300597A8B /* HWTMeViewController.m in Sources */,
@@ -695,6 +720,7 @@
 				066A013C1EA762A700597A8B /* HWTTabBarController.m in Sources */,
 				0646E1F11EB1915C00D5BACD /* HWTLoginRegisterView.m in Sources */,
 				0642A59A1EAF4A4D003D652C /* HWTSubTagViewController.m in Sources */,
+				062C726F1EB31CCD0088343E /* HWTSquareCell.m in Sources */,
 				0642A5821EAEEA11003D652C /* HWTAdViewController.m in Sources */,
 				0642A59D1EAF5018003D652C /* HWTSubTagModel.m in Sources */,
 				0642A5A11EAF537C003D652C /* HWTSubTagCell.m in Sources */,
