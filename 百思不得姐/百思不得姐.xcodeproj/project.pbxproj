@@ -49,8 +49,11 @@
 		066A013C1EA762A700597A8B /* HWTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066A013B1EA762A700597A8B /* HWTTabBarController.m */; };
 		067C89701EADDBF700CB14B8 /* HWTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C896F1EADDBF700CB14B8 /* HWTNavigationController.m */; };
 		067C89771EADDEF300CB14B8 /* HWTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C89761EADDEF300CB14B8 /* HWTSettingViewController.m */; };
+		069258A71EB97F470052E450 /* HWTFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 069258A61EB97F470052E450 /* HWTFileTool.m */; };
 		0695359C1EA9A59500502142 /* HWTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0695359B1EA9A59500502142 /* HWTTabBar.m */; };
 		0695360B1EAA0A0900502142 /* UIBarButtonItem+HWTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0695360A1EAA0A0900502142 /* UIBarButtonItem+HWTItem.m */; };
+		06D2EF131EB85D5900DE27CC /* HWTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D2EF111EB85D5900DE27CC /* HWTWebViewController.m */; };
+		06D2EF141EB85D5900DE27CC /* HWTWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06D2EF121EB85D5900DE27CC /* HWTWebViewController.xib */; };
 		846F5BF106C0D704F6D96F7E /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B0D670A8EB124FEB0BB48 /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
@@ -122,11 +125,16 @@
 		067C896F1EADDBF700CB14B8 /* HWTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTNavigationController.m; sourceTree = "<group>"; };
 		067C89751EADDEF300CB14B8 /* HWTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTSettingViewController.h; sourceTree = "<group>"; };
 		067C89761EADDEF300CB14B8 /* HWTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTSettingViewController.m; sourceTree = "<group>"; };
+		069258A51EB97F470052E450 /* HWTFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTFileTool.h; sourceTree = "<group>"; };
+		069258A61EB97F470052E450 /* HWTFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTFileTool.m; sourceTree = "<group>"; };
 		0695359A1EA9A59500502142 /* HWTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTTabBar.h; sourceTree = "<group>"; };
 		0695359B1EA9A59500502142 /* HWTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTTabBar.m; sourceTree = "<group>"; };
 		069536081EA9E3DE00502142 /* BSBDJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSBDJ.h; sourceTree = "<group>"; };
 		069536091EAA0A0900502142 /* UIBarButtonItem+HWTItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HWTItem.h"; sourceTree = "<group>"; };
 		0695360A1EAA0A0900502142 /* UIBarButtonItem+HWTItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HWTItem.m"; sourceTree = "<group>"; };
+		06D2EF101EB85D5900DE27CC /* HWTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTWebViewController.h; sourceTree = "<group>"; };
+		06D2EF111EB85D5900DE27CC /* HWTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTWebViewController.m; sourceTree = "<group>"; };
+		06D2EF121EB85D5900DE27CC /* HWTWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWTWebViewController.xib; sourceTree = "<group>"; };
 		664B0D670A8EB124FEB0BB48 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953946C621AA5549C2AB368B /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E8848B94FCEF825BEA4C82E1 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
@@ -356,6 +364,9 @@
 				066A012A1EA7517300597A8B /* HWTMeViewController.h */,
 				066A012B1EA7517300597A8B /* HWTMeViewController.m */,
 				062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */,
+				06D2EF101EB85D5900DE27CC /* HWTWebViewController.h */,
+				06D2EF111EB85D5900DE27CC /* HWTWebViewController.m */,
+				06D2EF121EB85D5900DE27CC /* HWTWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,6 +433,7 @@
 		066A011A1EA750EA00597A8B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				069258A31EB97EEB0052E450 /* Tool */,
 				066A013D1EA76A5000597A8B /* Category */,
 				069536081EA9E3DE00502142 /* BSBDJ.h */,
 			);
@@ -544,6 +556,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		069258A31EB97EEB0052E450 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				069258A41EB97EEB0052E450 /* File */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		069258A41EB97EEB0052E450 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				069258A51EB97F470052E450 /* HWTFileTool.h */,
+				069258A61EB97F470052E450 /* HWTFileTool.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		10181575E70A3F86B3C96EFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D2EF141EB85D5900DE27CC /* HWTWebViewController.xib in Resources */,
 				066A00F91EA6FDEB00597A8B /* LaunchScreen.storyboard in Resources */,
 				0642A5921EAEF3C1003D652C /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				066A00F61EA6FDEB00597A8B /* Assets.xcassets in Resources */,
@@ -707,6 +737,7 @@
 				0646E1F61EB1CC5800D5BACD /* UIView+HWTFrame.m in Sources */,
 				067C89771EADDEF300CB14B8 /* HWTSettingViewController.m in Sources */,
 				066A01231EA750EA00597A8B /* main.m in Sources */,
+				06D2EF131EB85D5900DE27CC /* HWTWebViewController.m in Sources */,
 				0645FC431EA888DD005AA966 /* UIImage+Image.m in Sources */,
 				0642A5971EAF208A003D652C /* HWTAdModel.m in Sources */,
 				066A01261EA7513800597A8B /* HWTEssenceViewController.m in Sources */,
@@ -716,6 +747,7 @@
 				0646E1FE1EB1E59D00D5BACD /* HWTFastButton.m in Sources */,
 				066A012C1EA7517300597A8B /* HWTMeViewController.m in Sources */,
 				062FE3911EB0A1C800954D69 /* HWTLoginRegisterController.m in Sources */,
+				069258A71EB97F470052E450 /* HWTFileTool.m in Sources */,
 				066A01321EA751B400597A8B /* HWTPublishViewController.m in Sources */,
 				066A013C1EA762A700597A8B /* HWTTabBarController.m in Sources */,
 				0646E1F11EB1915C00D5BACD /* HWTLoginRegisterView.m in Sources */,

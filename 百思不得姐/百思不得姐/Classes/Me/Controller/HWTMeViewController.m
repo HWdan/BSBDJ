@@ -10,6 +10,7 @@
 #import "HWTSettingViewController.h"
 #import "HWTSquareModel.h"
 #import "HWTSquareCell.h"
+#import "HWTWebViewController.h"
 
 #define Me_ServiceHttp @"http://api.budejie.com/api/api_open.php"
 #define itemWH (HWTScreenW - (cols - 1) * margin) / cols
@@ -17,7 +18,7 @@ static NSInteger cols = 4;
 static CGFloat margin = 1;
 static NSString * const Me_CollectionViewCellID = @"Me_CollectionViewCellID";
 
-@interface HWTMeViewController ()<UICollectionViewDataSource>
+@interface HWTMeViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *squareModels;
 @property (nonatomic, weak) UICollectionView *collectionView;
@@ -31,6 +32,10 @@ static NSString * const Me_CollectionViewCellID = @"Me_CollectionViewCellID";
     [self setMeTrendsNavigationItem];
     [self setupFooterView];
     [self loadData];
+    //出来 cell 间距，tableview 有额外的头部和尾部间距
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = 10;
+    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
 
 #pragma mark - 请求网络数据
@@ -91,6 +96,7 @@ static NSString * const Me_CollectionViewCellID = @"Me_CollectionViewCellID";
     collectionView.backgroundColor = self.tableView.backgroundColor;
     self.tableView.tableFooterView = collectionView;
     collectionView.dataSource = self;
+    collectionView.delegate = self;
     collectionView.scrollEnabled = NO;
     //注册 cell
     [collectionView registerNib:[UINib nibWithNibName:@"HWTSquareCell" bundle:nil] forCellWithReuseIdentifier:Me_CollectionViewCellID];
@@ -105,6 +111,17 @@ static NSString * const Me_CollectionViewCellID = @"Me_CollectionViewCellID";
     HWTSquareCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:Me_CollectionViewCellID forIndexPath:indexPath];
     cell.square = self.squareModels[indexPath.row];
     return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    HWTSquareModel *square = self.squareModels[indexPath.row];
+    if (![square.url containsString:@"http"]) {
+        return;
+    }
+    HWTWebViewController *webVC = [[HWTWebViewController alloc] init];
+    webVC.url = [NSURL URLWithString:square.url];
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 #pragma mark - 事件
