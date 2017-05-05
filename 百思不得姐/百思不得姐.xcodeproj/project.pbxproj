@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0619C7011EBB05B500B3D9EB /* HWTTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0619C7001EBB05B500B3D9EB /* HWTTitleButton.m */; };
+		062408451EBC1E7A0090BA08 /* HWTAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062408441EBC1E7A0090BA08 /* HWTAllViewController.m */; };
+		062408481EBC1E950090BA08 /* HWTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062408471EBC1E950090BA08 /* HWTVideoViewController.m */; };
+		0624084B1EBC1EAC0090BA08 /* HWTVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624084A1EBC1EAC0090BA08 /* HWTVoiceViewController.m */; };
+		0624084E1EBC1EC30090BA08 /* HWTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624084D1EBC1EC30090BA08 /* HWTPictureViewController.m */; };
+		062408511EBC1EDB0090BA08 /* HWTWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062408501EBC1EDB0090BA08 /* HWTWordViewController.m */; };
+		062408541EBC54150090BA08 /* HWTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 062408531EBC54150090BA08 /* HWTConst.m */; };
 		062C72691EB2E74B0088343E /* HWTLoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C72681EB2E74B0088343E /* HWTLoginField.m */; };
 		062C726B1EB314BF0088343E /* HWTMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */; };
 		062C726F1EB31CCD0088343E /* HWTSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C726D1EB31CCD0088343E /* HWTSquareCell.m */; };
@@ -58,6 +65,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0619C6FF1EBB05B500B3D9EB /* HWTTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTTitleButton.h; sourceTree = "<group>"; };
+		0619C7001EBB05B500B3D9EB /* HWTTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTTitleButton.m; sourceTree = "<group>"; };
+		062408431EBC1E7A0090BA08 /* HWTAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTAllViewController.h; sourceTree = "<group>"; };
+		062408441EBC1E7A0090BA08 /* HWTAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTAllViewController.m; sourceTree = "<group>"; };
+		062408461EBC1E950090BA08 /* HWTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTVideoViewController.h; sourceTree = "<group>"; };
+		062408471EBC1E950090BA08 /* HWTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTVideoViewController.m; sourceTree = "<group>"; };
+		062408491EBC1EAC0090BA08 /* HWTVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTVoiceViewController.h; sourceTree = "<group>"; };
+		0624084A1EBC1EAC0090BA08 /* HWTVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTVoiceViewController.m; sourceTree = "<group>"; };
+		0624084C1EBC1EC30090BA08 /* HWTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTPictureViewController.h; sourceTree = "<group>"; };
+		0624084D1EBC1EC30090BA08 /* HWTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTPictureViewController.m; sourceTree = "<group>"; };
+		0624084F1EBC1EDB0090BA08 /* HWTWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTWordViewController.h; sourceTree = "<group>"; };
+		062408501EBC1EDB0090BA08 /* HWTWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTWordViewController.m; sourceTree = "<group>"; };
+		062408521EBC54150090BA08 /* HWTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTConst.h; sourceTree = "<group>"; };
+		062408531EBC54150090BA08 /* HWTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTConst.m; sourceTree = "<group>"; };
 		062C72671EB2E74B0088343E /* HWTLoginField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTLoginField.h; sourceTree = "<group>"; };
 		062C72681EB2E74B0088343E /* HWTLoginField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTLoginField.m; sourceTree = "<group>"; };
 		062C726A1EB314BF0088343E /* HWTMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HWTMeViewController.storyboard; sourceTree = "<group>"; };
@@ -282,6 +303,16 @@
 			children = (
 				066A01241EA7513800597A8B /* HWTEssenceViewController.h */,
 				066A01251EA7513800597A8B /* HWTEssenceViewController.m */,
+				062408431EBC1E7A0090BA08 /* HWTAllViewController.h */,
+				062408441EBC1E7A0090BA08 /* HWTAllViewController.m */,
+				062408461EBC1E950090BA08 /* HWTVideoViewController.h */,
+				062408471EBC1E950090BA08 /* HWTVideoViewController.m */,
+				062408491EBC1EAC0090BA08 /* HWTVoiceViewController.h */,
+				0624084A1EBC1EAC0090BA08 /* HWTVoiceViewController.m */,
+				0624084C1EBC1EC30090BA08 /* HWTPictureViewController.h */,
+				0624084D1EBC1EC30090BA08 /* HWTPictureViewController.m */,
+				0624084F1EBC1EDB0090BA08 /* HWTWordViewController.h */,
+				062408501EBC1EDB0090BA08 /* HWTWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +327,8 @@
 		066A010D1EA750EA00597A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0619C6FF1EBB05B500B3D9EB /* HWTTitleButton.h */,
+				0619C7001EBB05B500B3D9EB /* HWTTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +469,8 @@
 				069258A31EB97EEB0052E450 /* Tool */,
 				066A013D1EA76A5000597A8B /* Category */,
 				069536081EA9E3DE00502142 /* BSBDJ.h */,
+				062408521EBC54150090BA08 /* HWTConst.h */,
+				062408531EBC54150090BA08 /* HWTConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -732,6 +767,7 @@
 			files = (
 				062C72731EB332B80088343E /* HWTSquareModel.m in Sources */,
 				066A01291EA7514F00597A8B /* HWTFriendTrendsViewController.m in Sources */,
+				062408511EBC1EDB0090BA08 /* HWTWordViewController.m in Sources */,
 				0695359C1EA9A59500502142 /* HWTTabBar.m in Sources */,
 				066A012F1EA7519900597A8B /* HWTNewViewController.m in Sources */,
 				0646E1F61EB1CC5800D5BACD /* UIView+HWTFrame.m in Sources */,
@@ -740,21 +776,27 @@
 				06D2EF131EB85D5900DE27CC /* HWTWebViewController.m in Sources */,
 				0645FC431EA888DD005AA966 /* UIImage+Image.m in Sources */,
 				0642A5971EAF208A003D652C /* HWTAdModel.m in Sources */,
+				062408541EBC54150090BA08 /* HWTConst.m in Sources */,
 				066A01261EA7513800597A8B /* HWTEssenceViewController.m in Sources */,
 				066A01221EA750EA00597A8B /* AppDelegate.m in Sources */,
+				062408451EBC1E7A0090BA08 /* HWTAllViewController.m in Sources */,
 				062C72691EB2E74B0088343E /* HWTLoginField.m in Sources */,
 				0646E1F91EB1DF5700D5BACD /* HWTFastLoginView.m in Sources */,
 				0646E1FE1EB1E59D00D5BACD /* HWTFastButton.m in Sources */,
 				066A012C1EA7517300597A8B /* HWTMeViewController.m in Sources */,
 				062FE3911EB0A1C800954D69 /* HWTLoginRegisterController.m in Sources */,
+				0619C7011EBB05B500B3D9EB /* HWTTitleButton.m in Sources */,
 				069258A71EB97F470052E450 /* HWTFileTool.m in Sources */,
 				066A01321EA751B400597A8B /* HWTPublishViewController.m in Sources */,
 				066A013C1EA762A700597A8B /* HWTTabBarController.m in Sources */,
 				0646E1F11EB1915C00D5BACD /* HWTLoginRegisterView.m in Sources */,
 				0642A59A1EAF4A4D003D652C /* HWTSubTagViewController.m in Sources */,
 				062C726F1EB31CCD0088343E /* HWTSquareCell.m in Sources */,
+				0624084E1EBC1EC30090BA08 /* HWTPictureViewController.m in Sources */,
 				0642A5821EAEEA11003D652C /* HWTAdViewController.m in Sources */,
 				0642A59D1EAF5018003D652C /* HWTSubTagModel.m in Sources */,
+				0624084B1EBC1EAC0090BA08 /* HWTVoiceViewController.m in Sources */,
+				062408481EBC1E950090BA08 /* HWTVideoViewController.m in Sources */,
 				0642A5A11EAF537C003D652C /* HWTSubTagCell.m in Sources */,
 				0695360B1EAA0A0900502142 /* UIBarButtonItem+HWTItem.m in Sources */,
 				067C89701EADDBF700CB14B8 /* HWTNavigationController.m in Sources */,
